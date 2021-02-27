@@ -52,6 +52,14 @@ class PieceTest {
         );
     }
 
+    @Test
+    void getRepresentationByPiece() {
+        assertAll(
+                () -> assertThat(Piece.Type.PAWN.getWhiteRepresentation()).isEqualTo('p'),
+                () -> assertThat(Piece.Type.PAWN.getBlackRepresentation()).isEqualTo('P')
+        );
+
+    }
 
 
 
