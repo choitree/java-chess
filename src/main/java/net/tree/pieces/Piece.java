@@ -6,10 +6,10 @@ public class Piece {
     private char representation;
     private Type type;
 
-    public static final String WHITE_COLOR = "white";
-    public static final String BLACK_COLOR = "black";
+    private static final String WHITE_COLOR = "WHITE";
+    private static final String BLACK_COLOR = "BLACK";
 
-    private Piece(Type type, Color color) {
+     private Piece(Type type, Color color) {
         this.type = type;
         this.color = color;
 
@@ -67,6 +67,10 @@ public class Piece {
 
     public static Piece createBlackKing() {
         return new Piece(Type.KING, Color.BLACK);
+    }
+
+    public static Piece createBlank() {
+         return new Piece(Type.NO_PIECE, Color.NOCOLOR);
     }
 
 
