@@ -7,12 +7,16 @@ public enum Type {
     BISHOP('b'),
     QUEEN('q'),
     KING('k'),
-    NO_PIECE(' ');
+    NO_PIECE('_');
 
     private char representation;
 
     Type(char representation) {
         this.representation = representation;
+    }
+
+    public char getNoColorRepresentation() {
+        return this.representation;
     }
 
     public char getWhiteRepresentation() {

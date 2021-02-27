@@ -1,6 +1,7 @@
 package net.tree.chess;
 
 import net.tree.pieces.Piece;
+import net.tree.pieces.Type;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,32 +22,32 @@ public class Board {
     }
 
     public void initializeWhitePieces() {
-        whitePieceList.add(Piece.createWhiteRook());
-        whitePieceList.add(Piece.createWhiteKnight());
-        whitePieceList.add(Piece.createWhiteBishop());
-        whitePieceList.add(Piece.createWhiteQueen());
-        whitePieceList.add(Piece.createWhiteKing());
-        whitePieceList.add(Piece.createWhiteBishop());
-        whitePieceList.add(Piece.createWhiteKnight());
-        whitePieceList.add(Piece.createWhiteRook());
+        whitePieceList.add(Piece.createWhitePiece(Type.ROOK));
+        whitePieceList.add(Piece.createWhitePiece(Type.KNIGHT));
+        whitePieceList.add(Piece.createWhitePiece(Type.BISHOP));
+        whitePieceList.add(Piece.createWhitePiece(Type.QUEEN));
+        whitePieceList.add(Piece.createWhitePiece(Type.KING));
+        whitePieceList.add(Piece.createWhitePiece(Type.BISHOP));
+        whitePieceList.add(Piece.createWhitePiece(Type.KNIGHT));
+        whitePieceList.add(Piece.createWhitePiece(Type.ROOK));
 
         for(int i = 0 ; i < BOARD_SIZE ; i++) {
-            whitePieceList.add(Piece.createWhitePawn());
+            whitePieceList.add(Piece.createWhitePiece(Type.PAWN));
         }
     }
 
     public void initializeBlackPieces() {
-        blackPieceList.add(Piece.createBlackRook());
-        blackPieceList.add(Piece.createBlackKnight());
-        blackPieceList.add(Piece.createBlackBishop());
-        blackPieceList.add(Piece.createBlackQueen());
-        blackPieceList.add(Piece.createBlackKing());
-        blackPieceList.add(Piece.createBlackBishop());
-        blackPieceList.add(Piece.createBlackKnight());
-        blackPieceList.add(Piece.createBlackRook());
+        blackPieceList.add(Piece.createBlackPiece(Type.ROOK));
+        blackPieceList.add(Piece.createBlackPiece(Type.KNIGHT));
+        blackPieceList.add(Piece.createBlackPiece(Type.BISHOP));
+        blackPieceList.add(Piece.createBlackPiece(Type.QUEEN));
+        blackPieceList.add(Piece.createBlackPiece(Type.KING));
+        blackPieceList.add(Piece.createBlackPiece(Type.BISHOP));
+        blackPieceList.add(Piece.createBlackPiece(Type.KNIGHT));
+        blackPieceList.add(Piece.createBlackPiece(Type.ROOK));
 
         for(int i = 0 ; i < BOARD_SIZE ; i++) {
-            blackPieceList.add(Piece.createBlackPawn());
+            blackPieceList.add(Piece.createBlackPiece(Type.PAWN));
         }
     }
 
