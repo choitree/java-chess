@@ -42,7 +42,7 @@ class PieceTest {
     @DisplayName("비어있는 Piece 생성되는지 검증")
     @Test
     void checkBlankNoColorPiece() {
-        Piece blank = Piece.createBlank(Type.NO_PIECE);
+        Piece blank = Piece.createBlank();
 
         assertAll(
                 () -> assertThat(blank.isWhite()).isFalse(),

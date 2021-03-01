@@ -29,13 +29,13 @@ public class Piece {
          return piece;
     }
 
-
-    public static Piece createBlank(Type type) {
-        Piece piece = new Piece(type);
+    public static Piece createBlank() {
+        Piece piece = new Piece(Type.NO_PIECE);
         piece.color = Color.NOCOLOR;
         piece.representation = Type.NO_PIECE.getNoColorRepresentation();
         return piece;
     }
+
 
 
     public char getRepresentation() {
